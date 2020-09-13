@@ -370,7 +370,7 @@ func playerListResponse() string {
 	buf := bytes.NewBuffer([]byte("Player List:\n"))
 	for _, player := range VoiceStatusCache {
 		if player.tracking {
-			emoji := ":heart:"
+			emoji := ":thumbsup:"
 			if !player.amongUsAlive {
 				emoji = ":skull:"
 			}
